@@ -34,7 +34,7 @@ public class Cache {
         // TODO Auto-generated constructor stub
     }
 
-    public Cache(int id, String cache) {
+    public Cache(int id, String cookies) {
         this.id = id;
         this.cookies = cookies;
     }
