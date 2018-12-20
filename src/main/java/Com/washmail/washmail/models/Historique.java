@@ -8,22 +8,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Historique")
+@Table(name = "historique")
 public class Historique {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+	private int id;
 
 	@Column(name = "url")
 	private String url;
 
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -39,7 +39,7 @@ public class Historique {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Historique(long id, String url) {
+	public Historique(int id, String url) {
 		this.id = id;
 		this.url = url;
 	}
